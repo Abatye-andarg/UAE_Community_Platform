@@ -1,0 +1,292 @@
+/* ===== Home Page ===== */
+
+/* Logged-in hero */
+.home-logged-in {
+  background: var(--gradient-bg);
+}
+
+.home-hero {
+  padding: 8rem 0 5rem;
+  text-align: center;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-hub-badge {
+  background: var(--primary-light);
+  color: var(--primary);
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  font-size: 3.9rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.home-welcome-title {
+  font-size: 5rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+  letter-spacing: -0.03em;
+}
+
+.home-welcome-subtitle {
+  color: var(--text-muted);
+  font-size: 1.4rem;
+  margin-bottom: 3.5rem;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+.home-scroll-arrow {
+  color: var(--primary);
+  animation: bounce 2s infinite;
+  cursor: pointer;
+}
+
+/* Spotlight section */
+.home-spotlight-section {
+  background: var(--surface);
+  padding: 6rem 0;
+}
+
+.home-spotlight-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.home-spotlight-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.home-spotlight-title {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+}
+
+.home-spotlight-desc {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.home-spotlight-stats {
+  display: flex;
+  gap: 1rem;
+}
+
+.home-spotlight-stat {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.home-spotlight-img-wrap {
+  position: relative;
+}
+
+.home-spotlight-img {
+  width: 100%;
+  border-radius: 24px;
+  box-shadow: var(--shadow-lg);
+}
+
+.home-spotlight-badge {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background: var(--primary);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+
+.home-spotlight-badge-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.home-spotlight-badge-value {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+/* Shoutouts section */
+.home-shoutouts-section {
+  padding: 6rem 0;
+  background: var(--gradient-bg);
+}
+
+.home-shoutouts-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-weight: 800;
+}
+
+.home-shoutouts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.home-shoutout-card {
+  border: none;
+  background: var(--surface-alt);
+}
+
+.home-shoutout-header {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.home-shoutout-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.home-shoutout-avatar--green  { background: var(--primary-light); }
+.home-shoutout-avatar--blue   { background: #e0f2fe; }
+.home-shoutout-avatar--yellow { background: #fef3c7; }
+
+.home-shoutout-name {
+  font-weight: 700;
+}
+
+.home-shoutout-time {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.home-shoutout-quote {
+  font-style: italic;
+  color: var(--text);
+}
+
+/* Guest hero */
+.home-guest-hero {
+  background: var(--gradient-bg);
+}
+
+.home-guest-title {
+  font-size: 4.5rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+  color: var(--primary-dark);
+}
+
+.home-guest-subtitle {
+  font-size: 1.4rem;
+  color: var(--text-muted);
+  margin: 0 auto 3rem;
+  max-width: 700px;
+}
+
+.home-guest-cta {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.home-guest-cta .btn-primary {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+}
+
+/* Guest stats section */
+.home-stats-section {
+  padding: 4rem 8rem;
+  text-align: center;
+}
+
+.home-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 4rem;
+}
+
+.home-stat-card {
+  padding: 1.5rem;
+  border: none;
+  background: var(--surface);
+}
+
+.home-stat-value {
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.home-stat-value--green  { color: var(--primary); }
+.home-stat-value--purple { color: #8b5cf6; }
+.home-stat-value--amber  { color: var(--accent); }
+
+.home-stat-label {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+/* Why join section */
+.home-why-section {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.home-why-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 4rem;
+}
+
+.home-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+}
+
+.home-feature-card {
+  padding: 3rem 2rem;
+}
+
+.home-feature-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 2rem;
+}
+
+.home-feature-icon--green  { background: var(--primary-light); }
+.home-feature-icon--blue   { background: rgba(2, 132, 199, 0.1); }
+.home-feature-icon--amber  { background: rgba(245, 158, 11, 0.1); }
+
+.home-feature-desc {
+  color: var(--text-muted);
+}
